@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<Example>() {
             @Override
             public void onResponse(Call<Example> call, Response<Example> response) {
-            System.out.println("responded! " + response.body().getFeed().getResults().size());
-            generateFromExample(response.body());
+                System.out.println("responded! " + response.body().getFeed().getResults().size());
+                generateFromExample(response.body());
             }
 
             @Override
