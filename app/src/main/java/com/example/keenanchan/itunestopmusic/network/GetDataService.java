@@ -7,6 +7,6 @@ import retrofit2.http.GET;
 
 public interface GetDataService {
 
-    @GET("/apple-music/coming-soon/all/10/explicit")
+    @GET("us/apple-music/coming-soon/all/10/explicit.json")
     Call<Example> getExample();
 }
